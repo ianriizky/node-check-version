@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const chalk = require("chalk");
 const nodeCheck = require("../src/index.js");
 
