@@ -1,5 +1,4 @@
 const chalk = require("chalk");
-const path = require("path");
 const nodeCheck = require("../src/index.js");
 
 const terminalArguments = require("minimist")(process.argv.slice(2));
