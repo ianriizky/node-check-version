@@ -8,7 +8,6 @@
 [![License][license-image]][license-url]
 
 Make sure that the [Node.js][node-url], [NPM][npm-url], or [Yarn][yarn-url] version being run is the same as the version defined in your package.json.
-Run [Node.js](http://nodejs.org) and it's specified package manager version checking.
 
 ## Requirement
 
