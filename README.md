@@ -12,7 +12,7 @@ Run [Node.js](http://nodejs.org) and it's specified package manager version chec
 
 ## Requirement
 
-- Node.js ^12.22.12 || ^14.21.3 || >=16.0.0
+- Node.js ^14.21.3 || >=16.0.0
 
 ## Installation
 
