@@ -1,0 +1,36 @@
+{
+  "name": "@ianriizky/node-check-version",
+  "version": "1.0.0",
+  "description": "Make sure that the Node.js, NPM, or Yarn version being run is the same as the version defined in your package.json.",
+  "main": "src/index.js",
+  "bin": {
+    "node-check-version": "./bin/index.js"
+  },
+  "engines": {
+    "node": "^12.22.12 || ^14.21.3 || >=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianriizky/node-check-version.git"
+  },
+  "keywords": [
+    "Node.js",
+    "NPM",
+    "Yarn",
+    "SemVer"
+  ],
+  "author": {
+    "name": "Septianata Rizky Pratama",
+    "email": "ian.rizkypratama@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ianriizky/node-check-version/issues"
+  },
+  "homepage": "https://github.com/ianriizky/node-check-version#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "minimist": "^1.2.8",
+    "semver": "^7.5.4"
+  }
+}
