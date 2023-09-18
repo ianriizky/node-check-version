@@ -8,7 +8,18 @@
 [![Coverage Status][coverage-status-image]][coverage-status-url]
 [![License][license-image]][license-url]
 
-Make sure that the [Node.js][node-url], [NPM][npm-url], or [Yarn][yarn-url] version being run is the same as the version defined in your package.json.
+Make sure that the [nodejs][node-url], [npm][npm-url], [yarn][yarn-url], [pnpm][pnpm-url], or [npx][npx-url] installed version run is the same as the version defined in your package.json.
+
+## Table of Contents
+
+- [Node.js Check Version](#nodejs-check-version)
+  - [Table of Contents](#table-of-contents)
+  - [Requirement](#requirement)
+  - [Installation](#installation)
+  - [Testing](#testing)
+  - [Changelog](#changelog)
+  - [License](#license)
+  - [Credits](#credits)
 
 ## Requirement
 
@@ -19,7 +30,7 @@ Make sure that the [Node.js][node-url], [NPM][npm-url], or [Yarn][yarn-url] vers
 You can install the project through <https://www.npmjs.com> :
 
 ```bash
-npm i @ianriizky/node-check-version
+npm install @ianriizky/node-check-version
 ```
 
 ## Testing
@@ -59,3 +70,5 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [node-url]: http://nodejs.org
 [npm-url]: https://www.npmjs.com
 [yarn-url]: https://yarnpkg.com
+[pnpm-url]: https://pnpm.io
+[npx-url]: https://www.npmjs.com/package/npx

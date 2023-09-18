@@ -1,7 +1,7 @@
 {
   "name": "@ianriizky/node-check-version",
   "version": "1.0.0",
-  "description": "Make sure that the Node.js, NPM, or Yarn version being run is the same as the version defined in your package.json.",
+  "description": "Make sure that the nodejs, npm, yarn, pnpm, or npx installed version run is the same as the version defined in your package.json.",
   "main": "src/index.js",
   "bin": {
     "node-check-version": "./bin/index.js"
@@ -10,8 +10,7 @@
     "node": "^14.21.3 || >=16.0.0"
   },
   "volta": {
-    "node": "14.21.3",
-    "yarn": "1.22.19"
+    "node": "14.21.3"
   },
   "scripts": {
     "test": "jest"
@@ -21,10 +20,12 @@
     "url": "git+https://github.com/ianriizky/node-check-version.git"
   },
   "keywords": [
-    "Node.js",
-    "NPM",
-    "Yarn",
-    "SemVer"
+    "nodejs",
+    "npm",
+    "yarn",
+    "pnpm",
+    "npx",
+    "semver"
   ],
   "author": {
     "name": "Septianata Rizky Pratama",

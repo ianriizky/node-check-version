@@ -1,0 +1,47 @@
+SYNOPSIS
+      node-check-version [OPTIONS]
+
+DESCRIPTION
+      node-check-version will make sure that the nodejs, npm,
+      yarn, pnpm, or npx installed version run is the same
+      as the version defined in your package.json.
+
+      Information about the defined and installed version
+      will be printed. The program will exit with an
+      error code if the defined version does not
+      satisfy the installed version.
+
+OPTIONS
+
+      --node=VERSION
+            Check that the defined node version matches the given semver
+            version range.
+
+      --npm=VERSION
+            Check that the defined npm version matches the given semver
+            version range.
+
+      --yarn VERSION
+            Check that the defined yarn version matches the given semver
+            version range.
+
+      --pnpm VERSION
+            Check that the current pnpm version matches the given semver
+            version range.
+
+      --npx VERSION
+            Check that the defined npx version matches the given semver
+            version range.
+
+      --package
+            Use the "engines" key in the defined package.json for the
+            semver version ranges.
+
+      --volta
+            Use the versions pinned by Volta in the package.json
+
+      -p, --print
+            Print installed versions.
+
+      -h, --help
+            Print this message.
