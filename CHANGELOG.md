@@ -2,7 +2,12 @@
 
 All notable changes to `Node.js Check Version` will be documented in this file.
 
-## [Unreleased](https://github.com/ianriizky/node-check-version/compare/1.0.0...develop)
+## [Unreleased](https://github.com/ianriizky/node-check-version/compare/1.0.1...develop)
+
+## [1.0.1](https://github.com/ianriizky/node-check-version/releases/tag/1.0.1) - 2023-09-19
+
+- chore: add package-lock.json into .gitignore by [@ianriizky](https://github.com/ianriizky) in [#f45b672](https://github.com/ianriizky/node-check-version/commit/f45b6721a848eacccfd0456693eeab3ba540181a).
+- fix: upgrade version into 1.0.1 due to npm publish issue by [@ianriizky](https://github.com/ianriizky) in [#1258dee](https://github.com/ianriizky/node-check-version/commit/1258deea0095e863cc579bc31b91deca80a9f2d9).
 
 ## [1.0.0](https://github.com/ianriizky/node-check-version/releases/tag/1.0.0) - 2023-09-19
 
