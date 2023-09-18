@@ -4,4 +4,3 @@ tests/
 .editorconfig
 .eslintignore
 .eslintrc
-.nvmrc
