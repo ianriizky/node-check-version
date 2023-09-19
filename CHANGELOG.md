@@ -2,7 +2,11 @@
 
 All notable changes to `Node.js Check Version` will be documented in this file.
 
-## [Unreleased](https://github.com/ianriizky/node-check-version/compare/1.0.2...develop)
+## [Unreleased](https://github.com/ianriizky/node-check-version/compare/1.0.3...develop)
+
+## [1.0.3](https://github.com/ianriizky/node-check-version/releases/tag/1.0.3) - 2023-09-19
+
+- fix: resolve bug when decide filePath on CheckVersion#collectNvmrc() method by [@ianriizky](https://github.com/ianriizky) in [#ba61634](https://github.com/ianriizky/node-check-version/commit/ba616348645a73365afcaede5bf9377396cc6cd5).
 
 ## [1.0.2](https://github.com/ianriizky/node-check-version/releases/tag/1.0.2) - 2023-09-19
 
