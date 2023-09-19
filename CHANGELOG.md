@@ -2,7 +2,12 @@
 
 All notable changes to `Node.js Check Version` will be documented in this file.
 
-## [Unreleased](https://github.com/ianriizky/node-check-version/compare/1.0.1...develop)
+## [Unreleased](https://github.com/ianriizky/node-check-version/compare/1.0.2...develop)
+
+## [1.0.2](https://github.com/ianriizky/node-check-version/releases/tag/1.0.2) - 2023-09-19
+
+- fix: use filePath parameter on CheckVersion#collectNvmrc() method by [@ianriizky](https://github.com/ianriizky) in [#e0286c1](https://github.com/ianriizky/node-check-version/commit/e0286c1d514cdbf5a966f1c2cd2400e0a38d56cb).
+- feat: add throwError parameter option on CheckVersion#collectPackageJson() and CheckVersion#collectNvmrc() method by [@ianriizky](https://github.com/ianriizky) in [#ff7cc5e](https://github.com/ianriizky/node-check-version/commit/ff7cc5efb1a5f65f98a763d933888a66225e2552).
 
 ## [1.0.1](https://github.com/ianriizky/node-check-version/releases/tag/1.0.1) - 2023-09-19
 
