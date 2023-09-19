@@ -1,6 +1,6 @@
 {
   "name": "@ianriizky/node-check-version",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Make sure that the nodejs, npm, yarn, pnpm, or npx installed version run is the same as the version defined in your package.json.",
   "main": "src/index.js",
   "bin": {
