@@ -297,7 +297,11 @@ class CheckVersion {
   static collectNvmrc(filePath = undefined, throwError = true) {
     const file = (() => {
       try {
-        return fs.readFileSync(path.join(process.cwd(), filePath || ".nvmrc"), {
+        const pathToFile = filePath
+          ? path.resolve(__dirname, filePath)
+          : path.join(process.cwd(), ".nvmrc");
+
+        return fs.readFileSync(pathToFile, {
           encoding: "utf8",
         });
       } catch (error) {
