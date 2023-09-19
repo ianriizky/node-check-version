@@ -265,10 +265,11 @@ class CheckVersion {
    * Collect list of application manifest on "package.json".
    *
    * @param {string} [filePath]
+   * @param {boolean} throwError
    * @returns {PackageJson | undefined}
    * @throws {TypeError}
    */
-  static collectPackageJson(filePath = undefined) {
+  static collectPackageJson(filePath = undefined, throwError = true) {
     const json = (() => {
       try {
         return require(filePath || path.join(process.cwd(), "package.json"));
@@ -277,9 +278,9 @@ class CheckVersion {
       }
     })();
 
-    if (json === undefined) {
+    if (throwError && json === undefined) {
       throw new TypeError("package.json is not found.");
-    } else if (typeof json !== "object") {
+    } else if (throwError && typeof json !== "object") {
       throw new TypeError("package.json format is invalid.");
     }
 
@@ -290,9 +291,10 @@ class CheckVersion {
    * Collect nvm manifest on ".nvmrc".
    *
    * @param {string} [filePath]
+   * @param {boolean} throwError
    * @throws {TypeError}
    */
-  static collectNvmrc(filePath = undefined) {
+  static collectNvmrc(filePath = undefined, throwError = true) {
     const file = (() => {
       try {
         return fs.readFileSync(path.join(process.cwd(), filePath || ".nvmrc"), {
@@ -303,11 +305,11 @@ class CheckVersion {
       }
     })();
 
-    if (file === undefined) {
+    if (throwError && file === undefined) {
       throw new TypeError(".nvmrc is not found.");
     }
 
-    return file.split("\n")[0];
+    return typeof file === "string" ? file.split("\n")[0] : file;
   }
 
   /**
