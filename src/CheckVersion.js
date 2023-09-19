@@ -290,13 +290,12 @@ class CheckVersion {
    * Collect nvm manifest on ".nvmrc".
    *
    * @param {string} [filePath]
-   * @returns {PackageJson | undefined}
    * @throws {TypeError}
    */
   static collectNvmrc(filePath = undefined) {
     const file = (() => {
       try {
-        return fs.readFileSync(path.join(process.cwd(), ".nvmrc"), {
+        return fs.readFileSync(path.join(process.cwd(), filePath || ".nvmrc"), {
           encoding: "utf8",
         });
       } catch (error) {
